@@ -1,0 +1,160 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+
+body{
+	background-color: #f5f1f6;
+	background-image: url(../style/fondo_servicios.jpg);
+	background-size: 90%;
+	/*position: relative;
+	padding-bottom: 70px;*/
+}
+
+header {
+	padding: 10px;
+	display: flex;
+	
+	align-items: center;
+	background-color: #333 ;
+	gap: 150px;
+	align-content: flex-start;
+}
+
+.menu-arriba {
+
+	
+	list-style-type: none;
+	display: flex;
+
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	align-items: center;	
+	gap: 10px;
+
+} 
+
+.menu-arriba >li{
+	color: white;
+	background-color: lightblue;
+	border: 10px;
+	width: 100px;
+	border-radius: 5px;
+}
+.menu-arriba >li:hover{
+	background-color: lightgoldenrodyellow;
+	border: 2px brown;
+	width: 150px;
+}
+
+
+
+.textt {
+	background-color: aqua;
+
+	background-color: rgba(0, 0, 0, .25);
+
+	color: white;
+
+	
+	padding-top: 50px ;
+	padding-bottom: 0px;
+	text-align: center;
+	font-size: 30px;
+}
+
+
+.tarjeta {
+	height: 150px;
+	border-radius: 5px;
+	display: flex;
+	justify-items: center;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 200px;
+
+}
+
+.tarjeta-1 {
+	height: 200px;
+	background-size: 300px 200px;
+	background-color: aqua;
+
+	background-color: rgba(0, 0, 0, .55);
+	margin: 1px;
+	border: 3px solid black;
+	border-radius: 10px;
+	color: white;
+}
+
+
+.tarjeta-2 {
+	height: 200px;
+	background-size: 300px 200px;
+	background-color: aqua;
+
+	background-color: rgba(0, 0, 0, .55);
+	margin: 1px;
+	border: 3px solid black;
+	border-radius: 10px;
+	color: white;
+}
+
+
+.tarjeta-3 {
+	height: 200px;
+	background-size: 300px 200px;
+	/*background-image: url(../style/tarjeta1.jpg);*/
+	background-color: aqua;
+
+	background-color: rgba(0, 0, 0, .55);
+	margin: 1px;
+	border: 3px solid black;
+	border-radius: 10px;
+	color: white;
+}
+
+.tarjeta-4 {
+	height: 200px;
+	background-size: 300px 200px;
+	background-color: aqua;
+
+	background-color: rgba(0, 0, 0, .55);	
+	margin: 1px;
+	border: 3px solid black;
+	border-radius: 10px;
+	color: white;
+}
+
+
+
+
+
+
+
+.pieDePagina {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	background-color: lightblue;
+	padding-bottom: 60px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+}
+
+.a :link {
+		text-decoration: none;
+
+}
+.redes {
+	height: 50px;
+	padding-left: 500px;
+	padding-top: 15px;
+
+}

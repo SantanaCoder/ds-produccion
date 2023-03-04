@@ -1,0 +1,114 @@
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+
+body{
+	background-image: url(../style/fondo_volver.jpg);
+	background-size: cover;
+	/*position: relative;
+	padding-bottom: 70px;*/
+}
+
+header {
+	padding: 10px;
+	display: flex;
+	
+	align-items: center;
+	background-color: #333 ;
+	gap: 150px;
+	align-content: flex-start;
+}
+
+.menu-arriba {
+
+	
+	list-style-type: none;
+	display: flex;
+
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	align-items: center;	
+	gap: 10px;
+
+} 
+
+.menu-arriba >li{
+	color: white;
+	background-color: lightblue;
+	border: 10px;
+	width: 100px;
+	border-radius: 5px;
+}
+.menu-arriba >li:hover{
+	background-color: lightgoldenrodyellow;
+	border: 2px brown;
+	width: 150px;
+}
+
+/*a partir de aca contenido*/
+
+
+
+.texto{
+
+	
+	
+}
+
+.titulo-1 {
+	font-size: 20px;
+	padding: 40px 40px 40px 40px;
+
+}
+
+.titulo-2 {
+	font-size: 50px;
+	padding: 40px 40px 40px 40px;
+
+	
+
+}
+
+.titulo-3 {
+	font-size: 35px;
+	padding: 40px 40px 40px 40px;
+
+}
+
+.button{
+	display: flex;
+	justify-content: center;
+	height: 50px;
+	
+}
+/*a partir de aca footer*/
+
+.pieDePagina {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	background-color: lightblue;
+	padding-bottom: 60px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+}
+
+.a :link {
+		text-decoration: none;
+
+}
+.redes {
+	height: 50px;
+	padding-left: 500px;
+	padding-top: 15px;
+
+}

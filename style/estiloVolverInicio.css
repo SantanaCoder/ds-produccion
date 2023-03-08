@@ -9,20 +9,29 @@
 
 
 body{
-	background-image: url(../style/fondo_volver.jpg);
+	background-image: url(../style/fondo_contacto.jpg);
 	background-size: cover;
-	/*position: relative;
-	padding-bottom: 70px;*/
+	position: relative;
+	padding-bottom: 0px;
 }
 
 header {
 	padding: 10px;
+	padding-bottom: 5px;
 	display: flex;
-	
-	align-items: center;
-	background-color: #333 ;
+	flex-wrap: wrap;
+	background-color: #0d2033;
+	/*background-color: #333 ;*/
 	gap: 150px;
-	align-content: flex-start;
+
+}
+
+.fondo{
+	background-size: cover;
+}
+
+a:link, a:visited, a:active {
+	text-decoration: none;
 }
 
 .menu-arriba {
@@ -30,26 +39,39 @@ header {
 	
 	list-style-type: none;
 	display: flex;
-
 	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: flex-end;
+	
+	justify-content: flex-star;
 	align-items: center;	
-	gap: 10px;
-
+	gap: 20px;
+	padding: 10px;
 } 
 
 .menu-arriba >li{
-	color: white;
 	background-color: lightblue;
-	border: 10px;
-	width: 100px;
-	border-radius: 5px;
+	
+	
+	/*border-radius: 5px;*/
+	font-size: 13px;
+	display: flex;
+	justify-content: center;
+
+
 }
 .menu-arriba >li:hover{
 	background-color: lightgoldenrodyellow;
 	border: 2px brown;
-	width: 150px;
+	width: 110px;
+	transition: 0.5s;
+	
+}
+
+.menu-arriba .unica:hover{
+	background-color: lightgoldenrodyellow;
+	border: 2px brown;
+	width: 200px;
+	transition: 0.5s;
+	
 }
 
 /*a partir de aca contenido*/
@@ -58,9 +80,22 @@ header {
 
 .texto{
 
-	
-	
+	animation: tenxt 2s;
+	text-align: center;
+	color: darkgrey;
 }
+
+@keyframes tenxt {
+
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
 
 .titulo-1 {
 	font-size: 20px;
@@ -82,33 +117,91 @@ header {
 
 }
 
-.button{
-	display: flex;
-	justify-content: center;
-	height: 50px;
+.button {
 	
-}
-/*a partir de aca footer*/
-
-.pieDePagina {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
-	background-color: lightblue;
-	padding-bottom: 60px;
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	height: 60px;
+	padding: 50px 50px 50px 50px;
+
+	justify-content: center;
+	border-radius: 10px;
+}	
+
+.button button{
+
+	background-color: powderblue;
+	border-radius: 10px;
+	height: 50px;
+	width: 120px;
+	align-content: center;
+	font-size: 15px;
+
+
 }
 
-.a :link {
-		text-decoration: none;
+.button button:hover{
+	
+	background-color: #0d2033;
 
+	height: 70px;
+	width: 180px;
+	transition: 0.5s, 0.5s;
+	font-size: 20px;
+
+}
+
+.button button a:hover{
+	color: white;
+}
+
+/*a partir de aca footer*/
+
+
+.pieDePagina {
+	
+	background-color: lightblue;
+	padding-bottom: 0px;
+	position: relative;
+	bottom: 0;
+	
+}
+
+.grids {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr); 
+	grid-template-areas: 
+		"link social";
+	justify-items: center;	
+	padding: 30px 0px;
+
+}
+
+.grids a:hover{
+	color: aqua;
+}
+.enlace {
+	display: flex;
+	align-items: center;
+	color: white;
+	grid-area: link;
+	size: 55px;
+	background-color: #0d2033;
+	text-align: center;
+	padding: 10px;
 }
 .redes {
-	height: 50px;
-	padding-left: 500px;
-	padding-top: 15px;
+	grid-area: social;
+	
+}
+
+.redes a{
+	color: white;
+	width: 45px;
+	height: 45px;
+	line-height: 45px;
+	background-color: #0d2033;
+	text-align: center;
 
 }
+
+

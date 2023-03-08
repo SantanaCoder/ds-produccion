@@ -7,20 +7,28 @@
 
 
 body{
-	background-image: url(../style/fondo_contacto.jpg);
-	background-size: 90% auto;
+	background-image: url(../style/composicion.jpg);
+	background-size: cover;
 	position: relative;
-	padding-bottom: 70px;
+	padding-bottom: 0px;
+	size: 100%;
 }
 
 header {
 	padding: 10px;
+	padding-bottom: 5px;
 	display: flex;
-	
-	align-items: center;
-	background-color: #333 ;
+	flex-wrap: wrap;
+	background-color: #0d2033;
+	/*background-color: #333 ;*/
 	gap: 150px;
-	align-content: flex-start;
+
+}
+
+
+
+a:link, a:visited, a:active {
+	text-decoration: none;
 }
 
 .menu-arriba {
@@ -28,50 +36,108 @@ header {
 	
 	list-style-type: none;
 	display: flex;
-
 	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: flex-end;
+	
+	justify-content: flex-star;
 	align-items: center;	
-	gap: 10px;
-
+	gap: 20px;
+	padding: 10px;
 } 
 
 .menu-arriba >li{
-	color: white;
 	background-color: lightblue;
-	border: 10px;
-	width: 100px;
-	border-radius: 5px;
+	
+	
+	/*border-radius: 5px;*/
+	font-size: 13px;
+	display: flex;
+	justify-content: center;
+
+
 }
 .menu-arriba >li:hover{
 	background-color: lightgoldenrodyellow;
 	border: 2px brown;
-	width: 150px;
-}
-
-.text {
-	padding-top: 30px;
-	padding-left: 170px;
-	color: black;
-	font-size: 25px;
-	width: 80%;
-	text-align: center;
+	width: 110px;
+	transition: 0.5s;
 	
 }
 
+.menu-arriba .unica:hover{
+	background-color: lightgoldenrodyellow;
+	border: 2px brown;
+	width: 200px;
+	transition: 0.5s;
+	
+}
+
+/* contenido desde aqui*/
+
+.text {
+	background-color: rgba(0, 0, 0, .25);
+	padding-top: 30px;
+	
+	color: black;
+	font-size: 25px;
+	
+	text-align: center;
+}
+
+.titulo {     
+	animation: txto 1s;
+	
+}
+
+@keyframes txto {
+
+	0%{
+		opacity: 0;
+		transform: translateY(10px) scale(0.5);
+	}
+
+	100%{
+		opacity: 1;
+		transform: translateY(0px) scale(1);
+	}
+}
 
 
+p{     
+	animation: txte 2s;
+	
+}
+
+@keyframes txte {
+
+	0%{
+		opacity: 0;
+		transform: translateY(10px) scale(0.5);
+	}
+
+	100%{
+		opacity: 1;
+		transform: translateY(0px) scale(1);
+	}
+}
+
+section {
+	padding-bottom: 50px;
+}
 .formulario {
-	width: 300px;
+	width: 500px;
 	padding: 5px;
 	background-color: #24303c;
 	border-radius: 10px;
 	margin: auto;
 	margin-top: 100px;
+	line-height: 35px;
 
 }
 .condiciones {
+	color: white;
+}
+
+.condiciones-1{
 	color: white;
 }
 
@@ -82,6 +148,7 @@ header {
 	margin-bottom: 16px;
 	font-size: 10px;
 	border: 1px solid #1f53c5;
+	color: white;
 }
 
 .formulario h2 {
@@ -90,27 +157,75 @@ header {
 }
 
 
-
+/* footer desde aqui*/
 
 .pieDePagina {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
+	
 	background-color: lightblue;
-	padding-bottom: 60px;
-	position: absolute;
+	padding-bottom: 0px;
+	position: relative;
 	bottom: 0;
-	width: 100%;
-	height: 60px;
+	
 }
 
-.a :link {
-		text-decoration: none;
+.grids {
 
+
+	display: grid;
+	grid-template-columns: repeat(2, 1fr); 
+	grid-template-areas: 
+		"link social";
+	justify-items: center;	
+	padding: 30px 0px;
+
+}
+
+.grids a:hover{
+	color: aqua;
+}
+.enlace {
+	display: flex;
+	align-items: center;
+	color: white;
+	grid-area: link;
+	size: 55px;
+	background-color: #0d2033;
+	text-align: center;
+	padding: 10px;
 }
 .redes {
-	height: 50px;
-	padding-left: 500px;
-	padding-top: 15px;
+	grid-area: social;
+	
+}
+
+.redes a{
+	color: white;
+	width: 45px;
+	height: 45px;
+	line-height: 45px;
+	background-color: #0d2033;
+	text-align: center;
 
 }
+
+
+
+@media screen and (max-width: 320px){
+	body {
+		background-size: cover;
+		display: grid;
+		min-height: 100vh;
+		width: 310px;
+	
+	}
+	section{
+		flex-direction: column;
+		
+	}
+
+	.pieDePagina{
+		position: relative;
+		
+	}
+
+

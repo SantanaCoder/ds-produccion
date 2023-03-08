@@ -7,21 +7,31 @@
 
 
 body{
-	background-color: #f5f1f6;
+	
 	background-image: url(../style/fondo_servicios.jpg);
-	background-size: 90%;
-	/*position: relative;
-	padding-bottom: 70px;*/
+	background-size: cover;
+	position: relative;
+
+	
 }
 
 header {
 	padding: 10px;
+	padding-bottom: 5px;
 	display: flex;
-	
-	align-items: center;
-	background-color: #333 ;
+	flex-wrap: wrap;
+	background-color: #0d2033;
+	/*background-color: #333 ;*/
 	gap: 150px;
-	align-content: flex-start;
+
+}
+
+.fondo{
+	background-size: cover;
+}
+
+a:link, a:visited, a:active {
+	text-decoration: none;
 }
 
 .menu-arriba {
@@ -29,39 +39,51 @@ header {
 	
 	list-style-type: none;
 	display: flex;
-
 	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: flex-end;
+	
+	justify-content: flex-star;
 	align-items: center;	
-	gap: 10px;
-
+	gap: 20px;
+	padding: 10px;
 } 
 
 .menu-arriba >li{
-	color: white;
 	background-color: lightblue;
-	border: 10px;
-	width: 100px;
-	border-radius: 5px;
+	
+	
+	/*border-radius: 5px;*/
+	font-size: 13px;
+	display: flex;
+	justify-content: center;
+
+
 }
 .menu-arriba >li:hover{
 	background-color: lightgoldenrodyellow;
 	border: 2px brown;
-	width: 150px;
+	width: 110px;
+	transition: 0.5s;
+	
+}
+
+.menu-arriba .unica:hover{
+	background-color: lightgoldenrodyellow;
+	border: 2px brown;
+	width: 200px;
+	transition: 0.5s;
+	
 }
 
 
-
 .textt {
-	background-color: aqua;
+	
 
 	background-color: rgba(0, 0, 0, .25);
 
 	color: white;
 
 	
-	padding-top: 50px ;
+	padding-top: 20px ;
 	padding-bottom: 0px;
 	text-align: center;
 	font-size: 30px;
@@ -69,34 +91,55 @@ header {
 
 
 .tarjeta {
-	height: 150px;
-	border-radius: 5px;
-	display: flex;
-	justify-items: center;
-	align-items: center;
-	justify-content: space-between;
-	padding-top: 200px;
+	flex-wrap: wrap;
+	display: grid;
+	grid-template-columns: 100px 1fr 1fr 100px;
+	grid-template-rows: repeat(2, 1fr);
+	grid-template-areas: 
+	". caja1 caja2 ."
+	". caja3 caja4 .";
+
+	padding: 50px 20px 50px 20px;
 
 }
 
 .tarjeta-1 {
-	height: 200px;
-	background-size: 300px 200px;
-	background-color: aqua;
 
+	animation: tar 1s;
+
+
+	flex-wrap: wrap;
 	background-color: rgba(0, 0, 0, .55);
-	margin: 1px;
+	grid-area: caja1;
 	border: 3px solid black;
 	border-radius: 10px;
 	color: white;
+
+}
+
+	
+
+
+
+@keyframes tar {
+	0%{
+		opacity: 0;
+		transform: translateY(30px) scale(0.9);
+	}
+
+	100%{
+		opacity: 1;
+		transform: translateY(0px) scale(1);
+	}
+
 }
 
 
 .tarjeta-2 {
-	height: 200px;
-	background-size: 300px 200px;
-	background-color: aqua;
 
+	animation: tar2 2s;
+	grid-area: caja2;
+	background-size: 300px 200px;
 	background-color: rgba(0, 0, 0, .55);
 	margin: 1px;
 	border: 3px solid black;
@@ -104,57 +147,120 @@ header {
 	color: white;
 }
 
+@keyframes tar2 {
+	0%{
+		opacity: 0;
+		transform: translateY(30px) scale(0.9);
+	}
+
+	100%{
+		opacity: 1;
+		transform: translateY(0px) scale(1);
+	}
+
+}
 
 .tarjeta-3 {
-	height: 200px;
-	background-size: 300px 200px;
-	/*background-image: url(../style/tarjeta1.jpg);*/
-	background-color: aqua;
+	animation: tar3 3s;
 
+	background-size: 300px 200px;
+	grid-area: caja3;
+	
 	background-color: rgba(0, 0, 0, .55);
 	margin: 1px;
 	border: 3px solid black;
 	border-radius: 10px;
 	color: white;
 }
+@keyframes tar3 {
+	0%{
+		opacity: 0;
+		transform: translateY(30px) scale(0.9);
+	}
 
+	100%{
+		opacity: 1;
+		transform: translateY(0px) scale(1);
+	}
+
+}
 .tarjeta-4 {
-	height: 200px;
-	background-size: 300px 200px;
-	background-color: aqua;
+	animation: tar4 4s;
 
+	grid-area: caja4;
+	background-size: 300px 200px;
 	background-color: rgba(0, 0, 0, .55);	
 	margin: 1px;
 	border: 3px solid black;
 	border-radius: 10px;
 	color: white;
 }
+@keyframes tar4 {
+	0%{
+		opacity: 0;
+		transform: translateY(30px) scale(0.9);
+	}
 
+	100%{
+		opacity: 1;
+		transform: translateY(0px) scale(1);
+	}
 
-
-
-
-
-
-.pieDePagina {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	background-color: lightblue;
-	padding-bottom: 60px;
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	height: 60px;
 }
 
-.a :link {
-		text-decoration: none;
+footer{
+	position: relative;
+	background-color: lightblue;
+	width: 100%;
+	bottom: 0px;
 
+
+}
+/*.pieDePagina {
+	
+	background-color: lightblue;
+	padding-bottom: 0px;
+	position: relative;
+	bottom: 0;
+	
+}*/
+
+.grids {
+
+
+	display: grid;
+	grid-template-columns: repeat(2, 1fr); 
+	grid-template-areas: 
+		"link social";
+	justify-items: center;	
+	padding: 30px 0px;
+
+}
+
+.grids a:hover{
+	color: aqua;
+}
+.enlace {
+	display: flex;
+	align-items: center;
+	color: white;
+	grid-area: link;
+	size: 55px;
+	background-color: #0d2033;
+	text-align: center;
+	padding: 10px;
 }
 .redes {
-	height: 50px;
-	padding-left: 500px;
-	padding-top: 15px;
+	grid-area: social;
+	
+}
+
+.redes a{
+	color: white;
+	width: 45px;
+	height: 45px;
+	line-height: 45px;
+	background-color: #0d2033;
+	text-align: center;
 
 }

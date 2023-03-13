@@ -148,6 +148,8 @@ a:link, a:visited, a:active {
 .boton button{
 	border-radius: 10px;
 	align-content: center;
+	background-color: skyblue;
+	width: 150;
 }
 
 .boton button h5{
@@ -157,8 +159,9 @@ a:link, a:visited, a:active {
 
 .boton button:hover{
 	color: black;
-	background-color: skyblue;
+	width: 230px;
 	transition: 0.5s;
+
 }
 	
 .boton button a:hover{

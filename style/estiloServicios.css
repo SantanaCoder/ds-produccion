@@ -11,7 +11,7 @@ body{
 	background-image: url(../style/fondo_servicios.jpg);
 	background-size: cover;
 	position: relative;
-
+	padding-bottom: 0px;
 	
 }
 

@@ -7,10 +7,14 @@
 
 
 body{
-	background-image: url(../style/fondo_inicio.jpg);
+	
 	background-size: cover;
 	position: relative;
 	padding-bottom: 0px;
+}
+
+.index-1 {
+	background-image: url(../style/fondo_inicio.jpg);
 }
 
 header {

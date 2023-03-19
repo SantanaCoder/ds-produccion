@@ -10,8 +10,10 @@ body{
 	background-image: url(../style/fondo_somos.jpg);
 	background-size: cover;
 	position: relative;
-	padding-bottom: 3em;
-	min-height: 100vh;
+	padding-bottom: 0px;
+	/*padding-bottom: 3em;
+
+	min-height: 100vh;*/
 }
 
 header {

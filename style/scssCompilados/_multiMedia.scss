@@ -1,0 +1,42 @@
+.card_2 {
+	display: flex;
+	align-content: center;
+	padding: 150px 20px 20px 20px;
+	background-color: rgba(0, 0, 0, .50);	
+
+    .video-box{
+        border: 2px solid black;
+        border-radius: 10px;
+    }
+}
+
+/*quienes somos*/
+
+.vidio {
+	border-radius: 5px;
+    
+}
+.foto {
+	height: 200px;
+	width: 200px;
+	border-radius: 500px;
+	border: 1px solid black;
+    &:hover{
+        height: 210px;
+        width: 210px;
+        transition: 1s;
+    }
+}
+
+.foto-1 {
+	height: 200px;
+	width: 200px;
+	border: 1px solid black;
+	border-radius: 500px;
+    &:hover{
+        height: 210px;
+        width: 210px;
+        transition: 1s;
+    }
+}
+

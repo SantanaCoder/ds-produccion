@@ -1,0 +1,70 @@
+
+.boton {
+    
+	display: flex;
+    flex-wrap: wrap;
+	flex-direction: row;
+	padding: 50px 50px 50px 50px;
+	justify-content: center;
+	
+    
+ 	
+}
+button{
+    
+    align-content: center;
+    background-color: skyblue;
+    
+    &:hover{
+    background-color: #0d2033;
+    
+    transition: 0.5s,;
+    font-size: 20px;
+    
+	
+	transition: 0.5s;
+    }
+    
+        
+}
+/*formulario contacto*/
+section .formulario{
+    padding-bottom: 50px;
+}
+
+.formulario {
+	width: 500px;
+	padding: 5px;
+	background-color: #24303c;
+	border-radius: 10px;
+    border: 2px solid #1f53c5;
+	margin: auto;
+	margin-top: 100px;
+    margin-bottom: 100px;
+	line-height: 35px;
+
+        .condiciones {
+        	color: white;
+}
+        .condiciones-1{
+        	    color: white;
+}
+        .controls {
+                    width: 100%;
+                    background-color: #24303c;
+                    padding: 10px;
+                    margin-bottom: 16px;
+                    font-size: 20px;
+                    border: 1px solid #1f53c5;
+                    color: white;
+}
+        .formulario h2 {
+            color: white;
+}
+
+}
+
+
+
+
+

@@ -1,0 +1,488 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a:link, a:visited, a:active {
+  text-decoration: none;
+}
+
+body {
+  background-size: cover;
+  position: relative;
+  padding-bottom: 0px;
+}
+
+.index-1 {
+  background-image: url(../style/images/fondo_inicio.jpg);
+}
+
+.volver-1 {
+  background-image: url(../style/images/fondo_contacto.jpg);
+}
+
+.contacto-1 {
+  background-image: url(../style/images/composicion.jpg);
+  /*size: 100%;*/
+}
+
+.quienes-1 {
+  background-image: url(../style/images/fondo_somos.jpg);
+}
+
+.servicios-1 {
+  background-image: url(../style/images/fondo_servicios.jpg);
+}
+
+header {
+  padding: 10px;
+  padding-bottom: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #0d2033;
+  /*background-color: #333 ;*/
+  gap: 150px;
+}
+header .fondo {
+  background-size: cover;
+}
+header .menu-arriba {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-star;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+}
+header .menu-arriba li {
+  background-color: lightblue;
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+}
+header .menu-arriba li:hover {
+  background-color: lightgoldenrodyellow;
+  border: 2px brown;
+  width: 110px;
+  transition: 0.5s;
+}
+
+.menu-arriba .unica:hover {
+  background-color: lightgoldenrodyellow;
+  width: 200px;
+  transition: 0.5s;
+}
+
+.titulo {
+  animation: txto 1s;
+}
+@keyframes txto {
+  0% {
+    opacity: 0;
+    transform: translateY(10px) scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+p {
+  animation: txte 2s;
+}
+@keyframes txte {
+  0% {
+    opacity: 0;
+    transform: translateY(10px) scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+/*index*/
+.texto {
+  color: darkgrey;
+  display: flex;
+  align-content: center;
+  padding: 20px 20px 20px 20px;
+}
+
+.flex-container {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.flex-container .card_1 {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-bottom: 20px;
+}
+.flex-container .card_1 .titulo {
+  color: darkturquoise;
+  font-size: 70px;
+  padding: 30px;
+}
+.flex-container .card_1 .texto2 {
+  color: silver;
+  padding: 50px;
+  font-size: 40px;
+}
+.flex-container .card_1 .texto3 {
+  color: white;
+  padding-left: 50px;
+}
+
+/*quienes somos*/
+.seccion {
+  padding-left: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+.seccion .card-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: darkgrey;
+  padding: 20px 20px 80px 20px;
+  border-radius: 20px;
+  border: 1px solid black;
+  font-size: 45px;
+  gap: 20px;
+}
+.seccion .card-2 {
+  padding-top: 30px;
+  color: blanchedalmond;
+  font-size: 25px;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+}
+.seccion .card-2 p {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+/*volver*/
+.textoVolver {
+  text-align: center;
+  color: darkgrey;
+}
+.textoVolver .titulo-1 {
+  font-size: 20px;
+  padding: 40px 40px 40px 40px;
+}
+.textoVolver .titulo-2 {
+  font-size: 50px;
+  padding: 40px 40px 40px 40px;
+}
+.textoVolver .titulo-3 {
+  font-size: 35px;
+  padding: 40px 40px 40px 40px;
+}
+
+/*servicios*/
+.textt {
+  background-color: rgba(0, 0, 0, 0.25);
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.tarjeta {
+  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 100px 1fr 1fr 100px;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: ". caja1 caja2 ." ". caja3 caja4 .";
+  padding: 50px 20px 50px 20px;
+}
+
+.parrafo-caja1 {
+  grid-area: caja1;
+  background-color: rgba(0, 0, 0, 0.55);
+  border: 3px solid black;
+  border-radius: 10px;
+  color: white;
+}
+
+.parrafo-caja2 {
+  grid-area: caja2;
+  background-color: rgba(0, 0, 0, 0.55);
+  border: 3px solid black;
+  border-radius: 10px;
+  color: white;
+}
+
+.parrafo-caja3 {
+  grid-area: caja3;
+  background-color: rgba(0, 0, 0, 0.55);
+  border: 3px solid black;
+  border-radius: 10px;
+  color: white;
+}
+
+.parrafo-caja4 {
+  grid-area: caja4;
+  background-color: rgba(0, 0, 0, 0.55);
+  border: 3px solid black;
+  border-radius: 10px;
+  color: white;
+}
+
+.parrafo-caja1 {
+  animation: tar 1s;
+}
+@keyframes tar {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+.parrafo-caja2 {
+  animation: tar 2s;
+}
+@keyframes tar {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+.parrafo-caja3 {
+  animation: tar 3s;
+}
+@keyframes tar {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+.parrafo-caja4 {
+  animation: tar 4s;
+}
+@keyframes tar {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+/*contacto*/
+.pieDePagina {
+  background-color: lightblue;
+  padding-bottom: 0px;
+  position: relative;
+  bottom: 0;
+}
+.pieDePagina .grids {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "link social";
+  justify-items: center;
+  padding: 30px 0px;
+  /*.redes {
+
+  }*/
+}
+.pieDePagina .grids .enlace {
+  display: flex;
+  align-items: center;
+  color: white;
+  grid-area: link;
+  size: 55px;
+  background-color: #0d2033;
+  text-align: center;
+  padding: 10px;
+}
+.pieDePagina .grids .redes a {
+  grid-area: social;
+  color: white;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  background-color: #0d2033;
+  text-align: center;
+}
+.pieDePagina .grids a:hover {
+  color: aqua;
+}
+
+.card_2 {
+  display: flex;
+  align-content: center;
+  padding: 150px 20px 20px 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.card_2 .video-box {
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+/*quienes somos*/
+.vidio {
+  border-radius: 5px;
+}
+
+.foto {
+  height: 200px;
+  width: 200px;
+  border-radius: 500px;
+  border: 1px solid black;
+}
+.foto:hover {
+  height: 210px;
+  width: 210px;
+  transition: 1s;
+}
+
+.foto-1 {
+  height: 200px;
+  width: 200px;
+  border: 1px solid black;
+  border-radius: 500px;
+}
+.foto-1:hover {
+  height: 210px;
+  width: 210px;
+  transition: 1s;
+}
+
+.boton {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 50px 50px 50px 50px;
+  justify-content: center;
+}
+
+button {
+  align-content: center;
+  background-color: skyblue;
+}
+button:hover {
+  background-color: #0d2033;
+  transition: 0.5s;
+  font-size: 20px;
+  transition: 0.5s;
+}
+
+/*formulario contacto*/
+section .formulario {
+  padding-bottom: 50px;
+}
+
+.formulario {
+  width: 500px;
+  padding: 5px;
+  background-color: #24303c;
+  border-radius: 10px;
+  border: 2px solid #1f53c5;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  line-height: 35px;
+}
+.formulario .condiciones {
+  color: white;
+}
+.formulario .condiciones-1 {
+  color: white;
+}
+.formulario .controls {
+  width: 100%;
+  background-color: #24303c;
+  padding: 10px;
+  margin-bottom: 16px;
+  font-size: 20px;
+  border: 1px solid #1f53c5;
+  color: white;
+}
+.formulario .formulario h2 {
+  color: white;
+}
+
+@media (max-width: 320px) {
+  body {
+    padding: 10px 10px 10px 10px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  body .container img {
+    width: 100%;
+    height: 150px;
+  }
+  body p {
+    font-size: 15px;
+    text-align: center;
+  }
+  body h1 {
+    font-size: 25px;
+  }
+  body .formulario {
+    width: 100%;
+  }
+  body .pieDePagina {
+    position: relative;
+    width: 100%;
+  }
+  body .pieDePagina .grids {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  body {
+    position: relative;
+    padding: 10px 10px 10px 10px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  body .flex-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: nowrap;
+  }
+  body .seccion {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: nowrap;
+  }
+  body .grids {
+    position: relative;
+    display: grid;
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=Estilos.css.map */

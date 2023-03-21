@@ -1,0 +1,160 @@
+.titulo {     
+	animation: txto 1s;	
+    @keyframes txto {
+        0%{
+            opacity: 0;
+            transform: translateY(10px) scale(0.5);
+        }
+        100%{
+            opacity: 1;
+            transform: translateY(0px) scale(1);
+        }
+    }
+}
+p{     
+	animation: txte 2s;	
+        @keyframes txte {
+            0%{
+                opacity: 0;
+                transform: translateY(10px) scale(0.5);
+            }
+            100%{
+                opacity: 1;
+                transform: translateY(0px) scale(1);
+        }     
+    }
+}
+/*index*/
+.texto {
+	color: darkgrey;
+	display: flex;
+	align-content: center;
+	padding: 20px 20px 20px 20px;
+}
+.flex-container {
+    color: white;
+    display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+    .card_1{
+        background-color: rgba(0, 0, 0, .50);
+        padding-bottom: 20px;
+        .titulo {
+            color: darkturquoise;
+            font-size: 70px;
+            padding: 30px;
+        }
+        .texto2 {
+            color: silver;
+            padding: 50px;
+            font-size: 40px;
+        }
+        .texto3 {
+            color: white;
+            padding-left: 50px;
+        }
+    }
+
+}
+
+/*quienes somos*/
+.seccion {
+	padding-left: 50px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 40px;
+    .card-1{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       background-color: darkgrey;
+       padding: 20px 20px 80px 20px;
+       border-radius: 20px;
+       border: 1px solid black;
+       font-size: 45px;
+       gap: 20px; 
+    }
+    .card-2 {
+        padding-top: 30px;
+        color: blanchedalmond;
+        font-size: 25px;
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);	
+        p{
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+    }
+}
+
+/*volver*/
+.textoVolver{	
+	text-align: center;
+	color: darkgrey;
+    .titulo-1 {
+        font-size: 20px;
+        padding: 40px 40px 40px 40px;
+    }
+    .titulo-2 {
+        font-size: 50px;
+        padding: 40px 40px 40px 40px;
+    }
+    .titulo-3 {
+        font-size: 35px;
+        padding: 40px 40px 40px 40px;
+    }
+}
+
+/*servicios*/
+.textt {
+	background-color: rgba(0, 0, 0, .25);
+	color: white;
+	padding-top: 20px ;
+	padding-bottom: 0px;
+	text-align: center;
+	font-size: 30px;
+}
+.tarjeta {
+	flex-wrap: wrap;
+	display: grid;
+	grid-template-columns: 100px 1fr 1fr 100px;
+	grid-template-rows: repeat(2, 1fr);
+	grid-template-areas: 
+	". caja1 caja2 ."
+	". caja3 caja4 .";
+	padding: 50px 20px 50px 20px;   
+}
+
+@each $posicion in caja1, caja2, caja3, caja4{
+    .parrafo-#{$posicion}{
+        grid-area: $posicion;
+        background-color: rgba(0, 0, 0, .55);
+        border: 3px solid black;
+        border-radius: 10px;
+        color: white;
+    }
+}
+$animation: (
+    caja1: 1s,
+    caja2: 2s,
+    caja3: 3s,
+    caja4: 4s,
+);
+@each $caja, $time in $animation{
+    .parrafo-#{$caja}{
+        animation: tar $time;
+        @keyframes tar {
+            0%{
+                opacity: 0;
+                transform: translateY(30px) scale(0.9);
+            }
+            100%{
+                opacity: 1;
+                transform: translateY(0px) scale(1);
+            }
+        }
+    }
+}
+
+/*contacto*/
+

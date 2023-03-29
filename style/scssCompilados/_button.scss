@@ -4,7 +4,9 @@
 	display: flex;
     flex-wrap: wrap;
 	flex-direction: row;
-	padding: 50px 50px 50px 50px;
+    size: 50px;
+	padding: 10px 10px 10px 10px;
+    font-size: small;
 	justify-content: center;
 	
     
@@ -33,7 +35,7 @@ section .formulario{
 }
 
 .formulario {
-	width: 500px;
+	
 	padding: 5px;
 	background-color: #24303c;
 	border-radius: 10px;
@@ -57,7 +59,12 @@ section .formulario{
                     font-size: 20px;
                     border: 1px solid #1f53c5;
                     color: white;
-}
+
+                    .botons{
+                        cursor: pointer;
+                    }
+                    }
+                    
         .formulario h2 {
             color: white;
 }

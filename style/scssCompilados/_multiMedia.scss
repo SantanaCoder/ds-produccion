@@ -1,12 +1,19 @@
 .card_2 {
 	display: flex;
-	align-content: center;
+    flex-direction: row;
+    justify-content: center;
+	align-items: center;
+    
+
 	padding: 150px 20px 20px 20px;
 	background-color: rgba(0, 0, 0, .50);	
+    
+    
 
     .video-box{
-        border: 2px solid black;
+        
         border-radius: 10px;
+        
     }
 }
 
@@ -38,5 +45,10 @@
         width: 210px;
         transition: 1s;
     }
+}
+
+.lista-equipos{
+    display: grid;
+
 }
 

@@ -26,40 +26,47 @@ p{
 }
 /*index*/
 .texto {
+    
 	color: darkgrey;
 	display: flex;
-	align-content: center;
+    
+	text-align: center;
 	padding: 20px 20px 20px 20px;
 }
+
 .flex-container {
     color: white;
-    display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+    
     .card_1{
         background-color: rgba(0, 0, 0, .50);
         padding-bottom: 20px;
         .titulo {
             color: darkturquoise;
-            font-size: 70px;
+            font-size: auto;
             padding: 30px;
+            text-align: center;
+            
         }
         .texto2 {
             color: silver;
             padding: 50px;
-            font-size: 40px;
+            font-size: auto;
+            text-align: center;
         }
         .texto3 {
+            
             color: white;
-            padding-left: 50px;
+            
+            font-size: auto;
         }
     }
 
 }
 
 /*quienes somos*/
-.seccion {
-	padding-left: 50px;
+.seccion{
+    width: 100%;
+	
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	gap: 40px;
@@ -85,12 +92,13 @@ p{
             grid-column-end: 3;
         }
     }
+  
 }
 
 /*volver*/
 .textoVolver{	
 	text-align: center;
-	color: darkgrey;
+	color: rgb(71, 64, 64);
     .titulo-1 {
         font-size: 20px;
         padding: 40px 40px 40px 40px;
@@ -101,9 +109,59 @@ p{
     }
     .titulo-3 {
         font-size: 35px;
-        padding: 40px 40px 40px 40px;
+        padding: 80px 40px 40px 40px;
+        color: rgb(74, 33, 33) !important;
     }
 }
+
+.lista-equipos{
+    gap: 40px;
+    .equi{
+            background-color: black;
+            color: white;
+            padding: 30px;
+            p{
+                color: aliceblue;
+            }
+    }
+}
+.equiposs{
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    gap: 20px;
+    padding-bottom: 50px;
+    
+    .fotos{
+        display: grid;
+        grid-template-columns: 15% 15% 70%;
+        flex-wrap: wrap;
+        background-color: rgba(54, 119, 193, 0.55);
+        color: aliceblue;
+        padding: 10px;
+        gap: 20px;
+        
+        p{
+            display: flex;
+            justify-content: flex-start;
+            padding: 20px 30px 20px 20px;
+            align-items: center;        
+        }
+        img{
+            padding-top: 20px;
+        }
+        .backgr{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 30px;
+            margin: 0;
+            background-color: chocolate;
+            
+     
+        }
+    }
+}
+            
 
 /*servicios*/
 .textt {
@@ -112,7 +170,7 @@ p{
 	padding-top: 20px ;
 	padding-bottom: 0px;
 	text-align: center;
-	font-size: 30px;
+	font-size: 30px;    
 }
 .tarjeta {
 	flex-wrap: wrap;
@@ -157,4 +215,57 @@ $animation: (
 }
 
 /*contacto*/
+h3{
+    color: azure;
+}
+
+.location{
+    display: grid;
+    grid-template-columns: 50% 10% 40%;
+    grid-template-rows: 40% 10% 40% 10%;
+    padding: 50px;
+    .map{
+        width: 110%;
+        height: 150%;
+        
+    }
+    .card-info-1{
+        grid-column: 3/4;
+        grid-row: 1/2;
+        justify-self: start;
+        align-self: start;
+        p{
+        background-color: rgba(206, 222, 217, 0.55);
+        padding: 10px;
+      } 
+    }
+    .card-info-2{
+        grid-column: 3/4;
+        grid-row: 3/4;
+        justify-self: start;
+        align-self: start;
+        p{
+            color: antiquewhite;
+            background-color: rgba(54, 45, 24, 0.55);
+            padding: 10px;
+          } 
+    }
+    .card-info-3{
+        grid-column: 1/2;
+        grid-row: 4/5;
+        row-gap: 15px;
+        justify-self: start;
+        align-self: end;
+        padding-bottom: 30px;
+        p{
+            color: antiquewhite;
+            background-color: rgba(87, 63, 8, 0.55);
+            padding: 10px;
+            font-size: 20px;
+          } 
+    }
+}
+
+
+
 

@@ -19,7 +19,7 @@
 					color: white;
 					grid-area: link;
 					size: 55px;
-					background-color: #0d2033;
+					background-color: $mainColor;
 					text-align: center;
 					padding: 10px;
 				}
@@ -32,7 +32,7 @@
 					width: 45px;
 					height: 45px;
 					line-height: 45px;
-					background-color: #0d2033;
+					background-color: $mainColor;
 					text-align: center;
 				}
 			}

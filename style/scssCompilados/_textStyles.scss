@@ -37,6 +37,7 @@ p{
 .flex-container {
     color: white;
     
+    
     .card_1{
         background-color: rgba(0, 0, 0, .50);
         padding-bottom: 20px;
@@ -117,7 +118,7 @@ p{
 .lista-equipos{
     gap: 40px;
     .equi{
-            background-color: black;
+            
             color: white;
             padding: 30px;
             p{
@@ -129,13 +130,18 @@ p{
     display: grid;
     grid-template-rows: repeat(5, 1fr);
     gap: 20px;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
+    padding-top: 40px;
+    border: 3px solid black;
+    border-radius: 10px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36, 0.25) 0%, rgba(9,9,121, 0.25) 35%, rgba(0,212,255, 0.25) 100%);
     
     .fotos{
         display: grid;
         grid-template-columns: 15% 15% 70%;
         flex-wrap: wrap;
-        background-color: rgba(54, 119, 193, 0.55);
+        background-color: rgba(54, 119, 193, 0.25);
         color: aliceblue;
         padding: 10px;
         gap: 20px;
@@ -182,7 +188,51 @@ p{
 	". caja3 caja4 .";
 	padding: 50px 20px 50px 20px;   
 }
+.services{
+    background-color: rgba(14, 3, 3, 0.25);
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 30px;
+    border: 3px solid black;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 30px;
+    .casilla1{        
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: end;
+        
+    }
+    .casilla2{        
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+    .casilla3{        
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: end;
+    }
+    .casilla4{        
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
 
+
+}
+
+.recuadro{
+    color: antiquewhite;
+    background-color: rgb(65, 29, 29); 
+
+               
+}
 @each $posicion in caja1, caja2, caja3, caja4{
     .parrafo-#{$posicion}{
         grid-area: $posicion;
@@ -192,7 +242,7 @@ p{
         color: white;
     }
 }
-$animation: (
+$animation: ( 
     caja1: 1s,
     caja2: 2s,
     caja3: 3s,
@@ -214,9 +264,13 @@ $animation: (
     }
 }
 
+
 /*contacto*/
-h3{
-    color: azure;
+.ttitle{
+    font-size: 35px;
+    color: rgb(189, 234, 234);
+    padding-top: 50px;
+    
 }
 
 .location{
@@ -224,6 +278,11 @@ h3{
     grid-template-columns: 50% 10% 40%;
     grid-template-rows: 40% 10% 40% 10%;
     padding: 50px;
+    background-color: rgba(0, 0, 0, .55);
+     border: 3px solid black;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 30px;
     .map{
         width: 110%;
         height: 150%;
@@ -234,6 +293,7 @@ h3{
         grid-row: 1/2;
         justify-self: start;
         align-self: start;
+        
         p{
         background-color: rgba(206, 222, 217, 0.55);
         padding: 10px;

@@ -36,10 +36,13 @@ p{
 
 .flex-container {
     color: white;
+    background-color: rgba(0, 0, 0, .50);
+    border: 3px solid black;
+    border-radius: 10px;
+   
     
     
     .card_1{
-        background-color: rgba(0, 0, 0, .50);
         padding-bottom: 20px;
         .titulo {
             color: darkturquoise;
@@ -71,11 +74,13 @@ p{
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	gap: 40px;
+    padding-top: 30px;
+    padding-bottom: 50px;
     .card-1{
        display: flex;
        flex-direction: column;
        align-items: center;
-       padding: 20px 20px 80px 20px;
+       padding: 20px 20px 60px 20px;
        background-color: rgba(145, 192, 211, 0.55);
        border: 3px solid black;
        border-radius: 10px;
@@ -84,10 +89,13 @@ p{
     }
     .card-2 {
         padding-top: 30px;
-        color: blanchedalmond;
-        font-size: 25px;
+        color: rgb(8, 8, 8);
+        font-size: 20px;
         display: grid;
         grid-template-columns: repeat(2, 2fr);	
+        background-color: rgba(145, 192, 211, 0.55);
+        border: 3px solid black;
+        border-radius: 10px;
         p{
             grid-column-start: 1;
             grid-column-end: 3;
@@ -99,7 +107,7 @@ p{
 /*volver*/
 .textoVolver{	
 	text-align: center;
-	color: rgb(71, 64, 64);
+	color: rgb(211, 209, 209);
     .titulo-1 {
         font-size: 20px;
         padding: 40px 40px 40px 40px;
@@ -111,7 +119,7 @@ p{
     .titulo-3 {
         font-size: 35px;
         padding: 80px 40px 40px 40px;
-        color: rgb(74, 33, 33) !important;
+        color: rgb(255, 185, 185) !important;
     }
 }
 

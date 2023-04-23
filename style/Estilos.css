@@ -118,9 +118,11 @@ p {
 
 .flex-container {
   color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 3px solid black;
+  border-radius: 10px;
 }
 .flex-container .card_1 {
-  background-color: rgba(0, 0, 0, 0.5);
   padding-bottom: 20px;
 }
 .flex-container .card_1 .titulo {
@@ -146,12 +148,14 @@ p {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
+  padding-top: 30px;
+  padding-bottom: 50px;
 }
 .seccion .card-1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px 20px 80px 20px;
+  padding: 20px 20px 60px 20px;
   background-color: rgba(145, 192, 211, 0.55);
   border: 3px solid black;
   border-radius: 10px;
@@ -160,10 +164,13 @@ p {
 }
 .seccion .card-2 {
   padding-top: 30px;
-  color: blanchedalmond;
-  font-size: 25px;
+  color: rgb(8, 8, 8);
+  font-size: 20px;
   display: grid;
   grid-template-columns: repeat(2, 2fr);
+  background-color: rgba(145, 192, 211, 0.55);
+  border: 3px solid black;
+  border-radius: 10px;
 }
 .seccion .card-2 p {
   grid-column-start: 1;
@@ -173,7 +180,7 @@ p {
 /*volver*/
 .textoVolver {
   text-align: center;
-  color: rgb(71, 64, 64);
+  color: rgb(211, 209, 209);
 }
 .textoVolver .titulo-1 {
   font-size: 20px;
@@ -186,7 +193,7 @@ p {
 .textoVolver .titulo-3 {
   font-size: 35px;
   padding: 80px 40px 40px 40px;
-  color: rgb(74, 33, 33) !important;
+  color: rgb(255, 185, 185) !important;
 }
 
 .lista-equipos {
@@ -488,7 +495,6 @@ p {
   justify-content: center;
   align-items: center;
   padding: 150px 20px 20px 20px;
-  background-color: rgba(0, 0, 0, 0.5);
 }
 .card_2 .video-box {
   border-radius: 10px;

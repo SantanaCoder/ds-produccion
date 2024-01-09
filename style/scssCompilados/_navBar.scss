@@ -6,6 +6,8 @@ header {
 	background-color: $mainColor;
 	/*background-color: #333 ;*/
 	gap: 150px;
+	position: relative;
+    z-index: 2;
 
 		.fondo{
 			background-size: cover;
